@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.6.0/remixicon.css" integrity="sha512-GL7EM8Lf8kU23I3kTio2kRWt8YRDVIQcSZjRVtVRfk05kB/QvkyafuTC94Ev0X6qk7Z0r5s06c1lsP1p/ezDYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stylesheets/dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="navigation-bar">
+                <div class="left-links"><i class="ri-menu-2-fill"></i>
+                    <a href="">Demos</a>
+                    <a href="">Collection</a>
+                    <a href="">All Products</a>
+                </div>
+                <div class="logo">
+                    <h5>Bazar</h5>
+                 </div>
+                <div class="right-links">  
+                    <div class="toggle">
+                        <i class="ri-sun-line"></i>
+                        <i class="ri-moon-line"></i>
+                    </div>
+                    <input type="text" style="border: none;">
+                    <a href="">My Account</a>
+                    <i id="cart-icon" class="ri-shopping-cart-line"></i>
+                    <a href="">Cart</a>
+                </div>
+            </div>
+           <div class="swiper-container">
+            <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/one-bg.jpg" style="opacity: .6;" > </div>
+      <div class="swiper-slide"><img src="images/two-bg.jpg"> </div>
+      <div class="swiper-slide"><img src="images/three-bg.jpg"> </div>
+    </div>
+             <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+            <div class="items">
+                  <!-- <form enctype="multipart/form-data" method="post" action="/upload" id="imageForm">
+        <label for="imageUpload">Choose Image</label>
+        <input type="file" name="imageUpload" id="imageUpload" accept="image/*">
+        <button type="button" onclick="uploadImage()">Upload Image</button>
+    </form> -->
+    <div class="grid-container" id="gridContainer"></div>
+            </div>   
+               <div class="video">
+                <div class="video-data">
+                    <video autoplay muted loop>
+                        <source src="images/bmw-intro.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-text">
+                    <img src="images/bg-op.jpg" alt="">
+                </div>
+                </div>
+                <div class="timer">
+                    <img src="images/timer-bg.jpg">
+                    <h2 id="text">Wheel Into Shavings: <br> Limited-Time Seasonal <br> Sale on All Car Accessories</h2>
+                    <button id="cart-button" >  Show Now <i class="ri-arrow-right-up-line"></i> </button>
+                    <div id="timer-container">
+                        <div class="timer-box" id="days">0</div>
+                        <div class="timer-box" id="hours">0</div>
+                        <div class="timer-box" id="minutes">0</div> 
+                        <div class="timer-box" id="seconds" >0</div>    
+                    </div>
+                </div>
+                <div class="see-more">
+                    <div class="one"><img src="images/s1.jpg" alt="" srcset=""></div>
+                    <div class="two"><img src="images/s2.jpg" alt="" srcset=""></div>
+                    <div class="three"><img src="images/s3.jpg" alt="" srcset=""></div>
+                    <div class="four"><img src="images/s4.jpg" alt="" srcset=""></div>
+                </div>
+                <div class="about-me">
+                    <div class="alinks">
+                    <a class="alink" href="">Homepage</a>
+                    <a class="alink" href="">AllProducts</a>
+                    <a class="alink" href="">My Contact</a>
+                    <a class="alink" href="">Cart</a>
+                    <a class="alink" href="">Other Accesories</a>
+
+                    <div class="paragraph">
+                    <h3 class="title-one">Our Values</h3>
+                    <p class="para">
+                        At Shopfront, we believe that every car should <br> reflect its owner's personal style, and with our <br>diverse catalog of high-quality products, you can transform any vehicle into a personal sanctuary <br> of comfort and efficiency.    
+                    </p>
+                </div>
+                <div class="input-filed">
+                    <input type="text" class="mail" placeholder="Enter your mail here">
+                    <button class="butt">Send</button>
+                </div>
+                </div>
+                
+                </div>
+            </div>
+    <div id="cart" class="hidden"></div>
+        
+        </div>
+
+    </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script src="javascripts/dashboard.js"></script>
+</body>
+</html>
